@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6555342950721063943}
   - component: {fileID: 6903325285979802577}
   - component: {fileID: 4551058636187717473}
+  - component: {fileID: 7877179814794698815}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -173,3 +174,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerSpeed: 10
   playerJumpPower: 1200
+--- !u!114 &7877179814794698815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1213554242209008309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2969c191a8249f42a910c68a883b3f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeLeft: 120
+  playerScore: 0
+  timeLeftUI: {fileID: 0}
+  playerScoreUI: {fileID: 0}

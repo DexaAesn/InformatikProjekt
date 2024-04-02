@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -24,12 +25,20 @@ public class Player_Score : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D trig) 
     {
-        CountScore();    
+        if (trig.gameObject.tag == "Finish")
+        {
+            CountScore();    
+        }
+        if (trig.gameObject.tag == "Coin")
+        {
+            playerScore = playerScore + 100;
+            Destroy(trig.gameObject);
+        }
     }
 
     void CountScore()
     {
-        playerScore = playerScore + (int)(timeLeft * 10);
+        playerScore = playerScore + (int)(timeLeft * 2);
         Debug.Log(playerScore);
     }
 }
