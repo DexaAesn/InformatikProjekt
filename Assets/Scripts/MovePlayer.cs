@@ -23,6 +23,15 @@ public class MovePlayer : MonoBehaviour
             {
                 Jump();
             }
+        // Animation
+            if(moveX != 0)
+            {
+                GetComponent<Animator>().SetBool ("IsRunning", true);
+            }
+            else
+            {
+                GetComponent<Animator>().SetBool ("IsRunning", false);
+            }
         // Player Direction
             if (moveX < 0.0f && facingRight == false)
             {
