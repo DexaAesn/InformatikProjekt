@@ -8,13 +8,11 @@ public class MovePlayer : MonoBehaviour
     private bool facingRight = false;
     public int playerJumpPower = 1250;
     private float moveX;
-    public GameObject coin;
 
     // Update is called once per frame
     void Update()
     {
         PlayerMove();
-    //    PlayerRaycast();
     }
 
     void PlayerMove()
@@ -52,12 +50,4 @@ public class MovePlayer : MonoBehaviour
         transform.localScale = localScale;
     }
 
-   // void PlayerRaycast()
-   // {
-   //     RaycastHit2D rayUp = Physics2D.Raycast (transform.position, Vector2.up);
-   //     if(rayUp != null && rayUp.collider != null && rayUp.distance < 0.9f && rayUp.collider.name == "MysteryBlock")
-   //     {
-   //         Destroy (rayUp.collider.gameObject);
-   //     }
-   // }
 }
