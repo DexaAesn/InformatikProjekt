@@ -10,8 +10,7 @@ public class DestroyMystery : MonoBehaviour
         private void OnTriggerEnter2D(Collider2D other) 
         {
             if(coin != null && other == player)
-            {
-                Debug.Log("if statement called");   
+            {   
                 GameObject newInstance = Instantiate(block, transform.position, transform.rotation);
                 GameObject newInstance2 = Instantiate(coin, new Vector2 (transform.position.x , (transform.position.y + 1)), transform.rotation);
                 Destroy(this.gameObject);
