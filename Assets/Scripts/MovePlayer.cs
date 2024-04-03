@@ -14,7 +14,7 @@ public class MovePlayer : MonoBehaviour
     void Update()
     {
         PlayerMove();
-        PlayerRaycast();
+    //    PlayerRaycast();
     }
 
     void PlayerMove()
@@ -52,13 +52,12 @@ public class MovePlayer : MonoBehaviour
         transform.localScale = localScale;
     }
 
-    void PlayerRaycast()
-    {
-        RaycastHit2D rayUp = Physics2D.Raycast (transform.position, Vector2.up);
-        if(rayUp != null && rayUp.collider != null && rayUp.distance < 0.9f && rayUp.collider.name == "MysteryBlock")
-        {
-            Destroy (rayUp.collider.gameObject);
-            GameObject newInstance = Instantiate(coin, Vector2(transform.position.x, (transform.position.y + 1), transform.rotation);
-        }
-    }
+   // void PlayerRaycast()
+   // {
+   //     RaycastHit2D rayUp = Physics2D.Raycast (transform.position, Vector2.up);
+   //     if(rayUp != null && rayUp.collider != null && rayUp.distance < 0.9f && rayUp.collider.name == "MysteryBlock")
+   //     {
+   //         Destroy (rayUp.collider.gameObject);
+   //     }
+   // }
 }
