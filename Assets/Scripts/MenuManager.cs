@@ -13,17 +13,17 @@ public class MenuManager : MonoBehaviour
 
     void LoadLevel1()
     {
-        if(Input.GetButtonDown ("1"))
+        if(Input.GetButtonDown ("0"))
         {
-            SceneManager.LoadScene ("Level1");
+            SceneManager.LoadScene ("Level0");
         }
     }
 
     void LoadLevel2()
     {
-        if(Input.GetButtonDown ("2"))
+        if(Input.GetButtonDown ("1"))
         {
-            SceneManager.LoadScene ("Level2");
+            SceneManager.LoadScene ("Level1");
         }
     }
 }

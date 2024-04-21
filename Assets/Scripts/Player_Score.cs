@@ -19,16 +19,12 @@ public class Player_Score : MonoBehaviour
         playerScoreUI.gameObject.GetComponent<TextMeshProUGUI>().text = ("Score: " + playerScore);
         if (timeLeft < 0.1f)
         {
-            SceneManager.LoadScene ("Menu");
+            SceneManager.LoadScene ("Lost");
         }
     }
 
     void OnTriggerEnter2D(Collider2D trig) 
     {
-        if (trig.gameObject.tag == "Finish")
-        {
-            CountScore();    
-        }
         if (trig.gameObject.tag == "Coin")
         {
             playerScore = playerScore + 100;
@@ -38,11 +34,26 @@ public class Player_Score : MonoBehaviour
         {
             playerScore = playerScore - 50;
         }
+        if(trig.gameObject.tag == "Finish")
+        { 
+            ReachedGoal();
+        }
     }
 
-    void CountScore()
+    public void ReachedGoal()
     {
-        playerScore = playerScore + (int)(timeLeft * 2);
-        Debug.Log(playerScore);
+        Debug.Log($"You've reached the supermarket."); 
+        Debug.Log($"Your score is: {playerScore}!");
+
+        if(playerScore > 300)
+        {
+            SceneManager.LoadScene ("Won");
+            Debug.Log("Congratulations, you have enough money to buy a cake! You may enter. :)");
+        }
+        else
+        {
+            SceneManager.LoadScene ("Lost");
+            Debug.Log("Sorry, there is no use in you entering. You can't buy a cake with the amount of money that you have. :(");
+        }
     }
 }
