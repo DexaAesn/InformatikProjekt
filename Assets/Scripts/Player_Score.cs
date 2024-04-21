@@ -34,6 +34,10 @@ public class Player_Score : MonoBehaviour
             playerScore = playerScore + 100;
             Destroy(trig.gameObject);
         }
+        if(trig.gameObject.tag == "Fire")
+        {
+            playerScore = playerScore - 50;
+        }
     }
 
     void CountScore()
