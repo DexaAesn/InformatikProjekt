@@ -12,6 +12,7 @@ public class Player_Score : MonoBehaviour
     public int playerScore = 0;
     public GameObject timeLeftUI;
     public GameObject playerScoreUI;
+    public int minScoreForEntrance;
     void Update()
     {
         timeLeft -= Time.deltaTime;
@@ -45,7 +46,7 @@ public class Player_Score : MonoBehaviour
         Debug.Log($"You've reached the supermarket."); 
         Debug.Log($"Your score is: {playerScore}!");
 
-        if(playerScore > 300)
+        if(playerScore >= minScoreForEntrance)
         {
             SceneManager.LoadScene ("Won");
             Debug.Log("Congratulations, you have enough money to buy a cake! You may enter. :)");

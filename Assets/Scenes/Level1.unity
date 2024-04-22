@@ -133,7 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 221573809}
   m_Layer: 0
-  m_Name: Deco
+  m_Name: Deko
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -152,7 +152,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1690551769}
   - {fileID: 1589624067}
   - {fileID: 1036194062}
   - {fileID: 1210486110}
@@ -978,7 +977,7 @@ MonoBehaviour:
   xMax: 132
   yMin: -15
   yMax: 20
-  abovePlayer: 3
+  abovePlayer: 2.5
 --- !u!95 &1260402064
 Animator:
   serializedVersion: 5
@@ -1114,13 +1113,13 @@ Transform:
   m_GameObject: {fileID: 1690551768}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 131.19148, y: 1.6298759, z: -5.136484}
+  m_LocalPosition: {x: 136.16452, y: 1.5146155, z: -4.4515824}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1171938284}
   - {fileID: 2054776838}
-  m_Father: {fileID: 221573809}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1703881216
 GameObject:
@@ -1348,7 +1347,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1953407815}
   m_Layer: 0
-  m_Name: CoolThings
+  m_Name: Interactive
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -54731,6 +54730,10 @@ PrefabInstance:
       propertyPath: playerScoreUI
       value: 
       objectReference: {fileID: 246224123}
+    - target: {fileID: 5734456030291731873, guid: 5c9571f61828dd74684f48daad778af3, type: 3}
+      propertyPath: minScoreForEntrance
+      value: 300
+      objectReference: {fileID: 0}
     - target: {fileID: 8854551111182772490, guid: 5c9571f61828dd74684f48daad778af3, type: 3}
       propertyPath: m_SortingOrder
       value: 3
@@ -54910,6 +54913,7 @@ SceneRoots:
   - {fileID: 3740192752803805294}
   - {fileID: 6115490603122361477}
   - {fileID: 1074981171}
+  - {fileID: 1690551769}
   - {fileID: 221573809}
   - {fileID: 1868185100}
   - {fileID: 1953407815}
