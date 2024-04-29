@@ -7,8 +7,12 @@ public class Enemy : MonoBehaviour
     public int enemySpeed = 7;
     bool facingRight = true;
     private float moveX = 1;
-    // public Collider2D treeCollider;
+    private SpriteRenderer mySpriteRenderer;
 
+    private void Start() 
+    {
+        mySpriteRenderer = GetComponent<SpriteRenderer>();
+    }
     void Update()
     {
         MoveEnemy();
@@ -16,32 +20,29 @@ public class Enemy : MonoBehaviour
 
     public void MoveEnemy()
     {
-        // Physics
-            gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2 (moveX * enemySpeed, gameObject.GetComponent<Rigidbody2D>().velocity.y);
+        gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2 (moveX * enemySpeed, gameObject.GetComponent<Rigidbody2D>().velocity.y);
     }
 
     private void OnTriggerEnter2D(Collider2D other) 
     {
-        if(other.gameObject.tag == "Test")
+        if(other.gameObject.tag == "Tree")
         {
-            Debug.Log("Collision worked");
             if (moveX < 0.0f && facingRight == false)
             {
                 moveX = 1;
-                Debug.Log("if 1 called");
+                mySpriteRenderer.flipX = true;
                 FlipEnemy();
             }
             else if(moveX > 0.0f && facingRight == true)
             {
                 moveX = -1;
-                Debug.Log("if 2 called");
+                mySpriteRenderer.flipX = false;
                 FlipEnemy();
             }
         }
     }
     public void FlipEnemy()
     {
-        Debug.Log("method called");
         facingRight = !facingRight;
         Vector2 localScale = gameObject.transform.localScale;
         localScale.x = -1;

@@ -39,6 +39,15 @@ public class Player_Score : MonoBehaviour
         { 
             ReachedGoal();
         }
+        if(trig.gameObject.tag == "Enemy")
+        {
+            playerScore = playerScore - 100;
+            Destroy(trig.gameObject);
+        }
+        if(trig.gameObject.tag == "EnemyKill")
+        {
+            playerScore = playerScore + 100;
+        }
     }
 
     public void ReachedGoal()

@@ -8,6 +8,8 @@ TagManager:
   - Fire
   - Tree
   - Test
+  - Enemy
+  - EnemyKill
   layers:
   - Default
   - TransparentFX
