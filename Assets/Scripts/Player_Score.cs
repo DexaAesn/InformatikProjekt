@@ -48,6 +48,11 @@ public class Player_Score : MonoBehaviour
         {
             playerScore = playerScore + 100;
         }
+        if(trig.gameObject.tag == "Greate")
+        {
+            playerScore = playerScore - 100;
+            Destroy(trig.gameObject);
+        }
     }
 
     public void ReachedGoal()

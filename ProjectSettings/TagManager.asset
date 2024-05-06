@@ -10,6 +10,7 @@ TagManager:
   - Test
   - Enemy
   - EnemyKill
+  - Greate
   layers:
   - Default
   - TransparentFX
