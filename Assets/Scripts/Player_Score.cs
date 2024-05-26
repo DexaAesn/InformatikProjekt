@@ -63,12 +63,12 @@ public class Player_Score : MonoBehaviour
         if(playerScore >= minScoreForEntrance)
         {
             SceneManager.LoadScene ("Won");
-            Debug.Log("Congratulations, you have enough money to buy a cake! You may enter. :)");
+            Debug.Log("Congratulations, you have enough money! You may enter. :)");
         }
         else
         {
             SceneManager.LoadScene ("Lost");
-            Debug.Log("Sorry, there is no use in you entering. You can't buy a cake with the amount of money that you have. :(");
+            Debug.Log("You don't have enough money to enter. Good luck next time!");
         }
     }
 }

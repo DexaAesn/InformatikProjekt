@@ -7,11 +7,11 @@ public class MenuManager : MonoBehaviour
 {
     void Update()
     {
+        LoadLevel0();
         LoadLevel1();
-        LoadLevel2();
     }
 
-    void LoadLevel1()
+    void LoadLevel0()
     {
         if(Input.GetButtonDown ("0"))
         {
@@ -19,7 +19,7 @@ public class MenuManager : MonoBehaviour
         }
     }
 
-    void LoadLevel2()
+    void LoadLevel1()
     {
         if(Input.GetButtonDown ("1"))
         {

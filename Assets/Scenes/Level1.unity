@@ -6121,16 +6121,20 @@ PrefabInstance:
       value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 8854551111182772490, guid: 5c9571f61828dd74684f48daad778af3, type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854551111182772490, guid: 5c9571f61828dd74684f48daad778af3, type: 3}
       propertyPath: m_SortingOrder
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 9081366611152089272, guid: 5c9571f61828dd74684f48daad778af3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.2
+      value: 51.92
       objectReference: {fileID: 0}
     - target: {fileID: 9081366611152089272, guid: 5c9571f61828dd74684f48daad778af3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.57
+      value: -11.8
       objectReference: {fileID: 0}
     - target: {fileID: 9081366611152089272, guid: 5c9571f61828dd74684f48daad778af3, type: 3}
       propertyPath: m_LocalPosition.z
