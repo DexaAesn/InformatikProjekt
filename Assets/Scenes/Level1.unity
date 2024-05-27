@@ -1956,7 +1956,7 @@ GameObject:
   - component: {fileID: 2054776839}
   m_Layer: 0
   m_Name: Entrance
-  m_TagString: Finish
+  m_TagString: Finish1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6130,11 +6130,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9081366611152089272, guid: 5c9571f61828dd74684f48daad778af3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 51.92
+      value: -1.35
       objectReference: {fileID: 0}
     - target: {fileID: 9081366611152089272, guid: 5c9571f61828dd74684f48daad778af3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -11.8
+      value: 0.52
       objectReference: {fileID: 0}
     - target: {fileID: 9081366611152089272, guid: 5c9571f61828dd74684f48daad778af3, type: 3}
       propertyPath: m_LocalPosition.z

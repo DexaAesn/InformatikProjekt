@@ -53,6 +53,10 @@ public class Player_Score : MonoBehaviour
             playerScore = playerScore - 100;
             Destroy(trig.gameObject);
         }
+        if(trig.gameObject.tag == "Finish1")
+        { 
+            SceneManager.LoadScene ("Level2");
+        }
     }
 
     public void ReachedGoal()

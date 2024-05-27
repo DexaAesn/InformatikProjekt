@@ -9,6 +9,7 @@ public class MenuManager : MonoBehaviour
     {
         LoadLevel0();
         LoadLevel1();
+        LoadMenu();
     }
 
     void LoadLevel0()
@@ -24,6 +25,13 @@ public class MenuManager : MonoBehaviour
         if(Input.GetButtonDown ("1"))
         {
             SceneManager.LoadScene ("Level1");
+        }
+    }
+    void LoadMenu()
+    {
+        if(Input.GetButtonDown("3"))
+        {
+            SceneManager.LoadScene ("Menu");
         }
     }
 }
